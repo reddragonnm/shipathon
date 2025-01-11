@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Design Club",
+        "description": "The newest edition to the list of clubs in BRCA, Design Club IIT Delhi, connects Design's long thought art world to the closely-knit world of problem-solving. Creativity, innovation, and professionalism remain the central bubbles for the community. Comprising a group of student designers who work together to expand professional outlook and personal style through the free exchange of ideas and cultivating aesthetically pleasing designs for everyone to enjoy and experience, one can always hop in to learn and get a head start, and know what is happening around in the design world."
+    },
+
+    {
+        "name": "PFC",
+        "description": "PFC or the Photography and Films Club is one of the most popular and an innate club of the BRCA. We do a range of activities from Photography, Photo Editing, Photo Manipulation, Videography, Video Editing and much more. The Film part of the club will include events such as Movie Making, Trailer Making, and Ad-Making, making it a haven for the creative. The club will also be conducting various workshops and learning sessions on image-editing and video-editing softwares. The club would also take you to various places across Delhi on Photowalks to click pictures and explore. The club also promotes trying different styles of photography and videography and conducts events like Freshers League and PIXELS to encourage students to try new things."
+    },
+
+    {
+        "name": "FACC",
+        "description": "FACC is the perfect platform for you to showcase your artistic capabilities and also learn a various new art-forms. With events like Oil Painting, Charcoal Painting, Mask Painting and workshops on artistic activities like Origami, there is a lot to fulfill your creative appetite. The club also organizes various events such as Street Painting, Graffiti, Face Painting etc during Rendezvous. The FAC junta is renowned for its untiring efforts, and is one of closest knit communities on campus."
+    },
+
+    {
+        "name": "Dance Club",
+        "description": "In the words of Martha Graham, \"Great dancers are not great because of their technique; they are great because of their passion\", and we at Dance Club believe the same. Known for its glamorous performances and dedication, the club outperforms itself with popular events like Duo Dance and Group Dance every year. It's also a fresher inclusive club, providing them with the opportunity to start as a Novice and grow into a professional through various workshops and Fresher only event, Offbeat. V-Defyn, IIT Delhi's dance troupe, is a well-known dance group in the Delhi region that has made its legacy with a thread of glorified victories. Ensemble, the choreography society of IIT Delhi, having won several national podiums, can surely boast that they are the finest in their domain. The Institute Dance Production, organised towards the end of the year, is the magnum opus of the club, and it also provides aspiring students with a platform to improve their skills."
+    },
+
+    {
+        "name": "Hindi Samiti",
+        "description": "समृद्ध - संस्कृति की कुछ अनसुनी कहानी हूं, मुशायरों - सम्मेलनों वाली बैठक वही पुरानी हूं। हिंदी साहित्य भारतीय संस्कृति की एक महान धरोहर रही है, और इस अमूल्य धरोहर को आपके सामने प्रस्तुत करने के लिए पेश है हिंदी समिति। हिंदी समिति का उद्देश्य भारतीय भाषाओं, साहित्य, और पौराणिक कथाओं के प्रति प्रेम और सम्मान को बढ़ावा देना है, साथ ही छात्रों में हिंदी साहित्य और संस्कृति के प्रति रुचि जागृत करना है। समिति नियमित रूप से विभिन्न साहित्यिक, सांस्कृतिक, शैक्षणिक और पौराणिक कार्यक्रमों का आयोजन करती है, जिनमें कविता पाठ, निबंध लेखन, वाद-विवाद प्रतियोगिता, पौराणिक क्विज़, और अन्य साहित्यिक गतिविधियाँ शामिल हैं। ये कार्यक्रम न केवल छात्रों के भाषाई कौशल को निखारते हैं, बल्कि उन्हें भारतीय सांस्कृतिक और पौराणिक मूल्यों से भी जोड़ते हैं। हमारा प्रयास है कि भारतीय हिंदी संस्कृति की समृद्ध परंपराओं को सजीव और समृद्ध बनाए रखा जाए, ताकि भविष्य की पीढ़ियाँ इनसे प्रेरणा ले सकें।"
+    },
+
+    {
+        "name": "Literary Club",
+        "description": "Long story short, books, shows, movies, anime, poetry, writing, and essentially any manifestation of creativity is what LitSoc is about and will continue to be. LitSoc contains people from all bands of the spectrum: from people who prefer dabbling in the visual arts rather than reading to those who can effortlessly get lost in the myriad of books they pick up and also everyone else in between. Our events range from classic literary to new age superhero and anime quizzes; witty, weird, wacky word games to paying homage to great past and present writers through our own works in the form of various creative writing competitions. Don't miss out on our raging and heated and completely random discussions (which may go on for days) on all things literary. These discussions have led to the creation of communities where one can find like-minded people and develop enriching and blossoming friendships. So come down the rabbit hole with us donning your Mad Hatter hats and join us for an exciting literary journey!"
+    },
+
+    {
+        "name": "Debating Club",
+        "description": "The ability to conceive, articulate and evaluate arguments through debating remains not only the lifetime of democracy and Society but essential to the development of an engaged and ethical individual living in a contemporary technological democratic society. Debating Society of IIT Delhi welcomes you on board to criticize, appreciate and advocate the various social-political and philosophical Ideas to debate and learn along the way. A family built on a common love of arguments is bound to be problematic and yet we find ourselves attached to this ever-bickering madhouse, a platform for learning, a platform for building confidence and questioning your beliefs. Through times good and bad this club continues to prosper because it's built on proving greatness to each other and to ourselves and that's what we do best."
+    },
+
+    {
+        "name": "Dramatics Club",
+        "description": "Hola Amigos We present to you ANKAHI, the dramatics society of IIT Delhi. And of course dramatics, where to begin with..... Well nowhere cause everything here is a beginning point. Be it acting like Bollywood or directing like Hollywood, be it story like K-drama or music like Dil se nikalta hua gaana everything is available here. From \"et tu brute\" to \"How's the Josh\", from a dramatic breeze to Haider ki speech we cover it all with the line of events including but not limited to the street plays, stage acts, monoacts ohh and wait it just doesn't end here with things online right now, first plan movies, don't worry we gotcha. Filled with fun, starting at drama and ending nowhere this is probably (totally not asked by other clubs to put a probably in there) the BEST club here at IIT Delhi Looking forward to all the ,enthusiasm and love by the audience and of course the participants"
+    },
+
+    {
+        "name": "Quizzing Club",
+        "description": "At first glance, it would seem that all we do is ask each other random stuff and reward those in honour who answer correctly. While that may be true in essence, we do this in a variety of genres AND in a variety of formats. From covering the generic fields of quizzing to even obscure fandoms, we cater to any information that can be presented in questions in a fun and interesting manner. Moreover, it’s not all “if-you-know-then-you-know”; most of the questions are curated by our quizmasters so that you can logically arrive at the answer too. So put on your thinking caps (or deerstalker hats) and join us on this never-ending pleasurable quest of acquiring random knowledge!"
+    },
+
+    {
+        "name": "Music Club",
+        "description": "“Music is the literature of heart, it commences where speech ends” ~ Alphonse de Lamartine Abode to the music fraternity of IIT Delhi, the Music Club aims to promote music culture among the students as well as the faculty. If you want to showcase your vocal or instrumental talent, or you are just a beginner aiming to delve into the world of music, or you simply want to explore and discuss various musical genres, it is just the right place for you. Proud to be one of the most active clubs in performing arts, the music club has given birth to many talented singers and musicians over all these years. The two musical societies namely Cadence, the Western Acapella society and Mridang, the Indian Classical society are renowned for carrying a rich musical legacy and aim to evoke interest and passion for music produced by India and the world. Located in SAC, the state-of-the-art music room is equipped with a variety of instruments and a recording studio, and is used for organizing training and practice sessions for the club members. All throughout the year, the music club organizes a wide range of events and boasts enthusiastic participation from all the students."
+    },
+
+    {
+        "name": "SPIC MACAY",
+        "description": "Society for the Promotion of Indian Classic Music And Culture Amongst Youth. It is a non-political, nationwide voluntary movement founded in 1977 by Dr Kiran seth, professor-Emeritus at IIT Delhi. It’s intention is to enrich the quality of formal education by increasing awareness about different aspects of Indian heritage and inspiring the young mind to imbibe the values embedded in it. It seeks to inspire youth through experiencing the mysticism embodied in the rich and heterogeneous cultural tapestry of Indian and World Heritage, with a hope that the beauty, grace, values, and wisdom embodied in these arts will influence their way of life and thinking and inspire one to become a better human being."
+    }
+]
