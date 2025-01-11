@@ -1,11 +1,12 @@
 from enum import Enum
 
 
-class Clubs(Enum):
-    PFC = ["Photography", "Films"]
-    Design = ["Design"]
-    Dance = ["Dance"]
-    Music = ["Music"]
+class Interests(Enum):
+    dance = 0
+    music = 1
+    writing = 2
+    design = 3
+    photography = 4
 
 
 class User:
@@ -13,6 +14,8 @@ class User:
         self.idx = idx
         self.likes = []
         self.dislikes = []
+
+        self.clubs_subscribed = []
 
     def get_data(self):
         data = {"likes": self.likes, "dislikes": self.dislikes}
