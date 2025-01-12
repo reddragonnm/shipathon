@@ -26,6 +26,8 @@ if st.session_state["authentication_status"]:
     # Get the user's liked and disliked events
     likes_dislikes = get_likes_dislikes(username)
 
+    st.write(likes_dislikes)
+
     # Define a query filter for recommending events happening today or in the future
     query_filter = models.Filter(
         must=[
