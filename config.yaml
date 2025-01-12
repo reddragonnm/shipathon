@@ -12,9 +12,9 @@ credentials:
       logged_in: true
       password: $2b$12$YeSHhVJ6REPGF45nMM6xouZqS7ziBM1GFEcxuI1JsRDT2drRkqg7G
       roles:
-      - admin
-      - editor
-      - viewer
+        - admin
+        - editor
+        - viewer
     hello:
       email: hello@hello.hello
       failed_login_attempts: 0
@@ -24,7 +24,7 @@ credentials:
       password: $2b$12$/wAEC16BLZZORWXUOh1ul.efp.vdjPHy5UfKdACU8s6SmMbf/V91e
       password_hint: HelloWorld@1
       roles:
-      - viewer
+        - viewer
     reddragonnm:
       email: hello2@gmail.com
       failed_login_attempts: 0
@@ -33,6 +33,17 @@ credentials:
       logged_in: true
       password: $2b$12$GgYVfWkMCLOto0NH7rlXxeVA9GI/Gnh/.UzJ5yn6P6FdJOWNt5fUm
       roles:
-      - admin
-      - editor
-      - viewer
+        - admin
+        - editor
+        - viewer
+    admin:
+      email: admin@gmail.com
+      failed_login_attempts: 0
+      first_name: Admin
+      last_name: Admin
+      logged_in: false
+      password: admin
+      roles:
+        - admin
+        - editor
+        - viewer
