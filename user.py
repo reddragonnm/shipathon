@@ -7,7 +7,7 @@ import streamlit_authenticator as stauth
 import streamlit as st
 
 import google.generativeai as genai
-from qdrant_client import QdrantClient, models
+from qdrant_client import QdrantClient
 from sentence_transformers import SentenceTransformer
 
 

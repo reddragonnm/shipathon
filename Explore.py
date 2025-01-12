@@ -1,6 +1,7 @@
-import os
-
 import streamlit as st
+from qdrant_client import models
+
+import datetime
 
 from user import get_authenticator, load_model
 from db import load_data, get_likes_dislikes, add_like, add_dislike
@@ -18,13 +19,23 @@ if st.session_state["authentication_status"]:
     username = st.session_state["username"]
     likes_dislikes = get_likes_dislikes(username)
 
+    query_filter = models.Filter(
+        must=[
+            models.FieldCondition(
+                key="date",
+                range=models.Range(gte=int(datetime.datetime.now().strftime("%Y%m%d"))),
+            )
+        ]
+    )
+
     _, qdrant_client, _ = load_model()
     recomm = qdrant_client.recommend(
         collection_name="my_events",
         positive=likes_dislikes["likes"],
         negative=likes_dislikes["dislikes"],
-        limit=5,
+        query_filter=query_filter,
     )
+
     for event in recomm:
         idx = event.id
         payload = event.payload

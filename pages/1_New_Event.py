@@ -63,7 +63,7 @@ if st.session_state["authentication_status"]:
                         id=next_id,
                         vector=encoder.encode(text).tolist(),
                         payload={
-                            "date": date.strftime("%y-%m-%d"),
+                            "date": int(date.strftime("%Y%m%d")),
                             "time": time,
                             "description": description,
                             "images": [str(image.getvalue()) for image in images],
