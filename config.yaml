@@ -1,0 +1,17 @@
+cookie:
+  expiry_days: 0
+  key: shipathon_project_cookie_key
+  name: shipathon_project_cookie_name
+credentials:
+  usernames:
+    reddragonnm:
+      failed_login_attempts:
+      first_name: Neelesh
+      last_name: Mishra
+      email: neeleshojmishra@gmail.com
+      logged_in: False
+      password: helloworld
+      roles: # Optional
+        - admin
+        - editor
+        - viewer
