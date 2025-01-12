@@ -1,31 +1,18 @@
 import streamlit_authenticator as stauth
+import streamlit as st
 
-import yaml
-from yaml.loader import SafeLoader
+import json
 
 
-class User:
-    def __init__(self, username):
-        self.username = username
-        self.likes = []
-        self.dislikes = []
-
-        self.clubs_subscribed = []
-
-    def get_data(self):
-        data = {"likes": self.likes, "dislikes": self.dislikes}
-        return data
+@st.cache_data
+def load_db():
+    pass
 
 
 def get_authenticator():
-    with open("./config.yaml") as file:
-        config = yaml.load(file, Loader=SafeLoader)
-
-    authenticator = stauth.Authenticate(
-        config["credentials"],
-        config["cookie"]["name"],
-        config["cookie"]["key"],
-        config["cookie"]["expiry_days"],
-    )
-
+    authenticator = stauth.Authenticate("./config.yaml")
     return authenticator
+
+
+def get_likes_dislikes():
+    username = st.session_state["name"]

@@ -4,14 +4,23 @@ cookie:
   name: shipathon_project_cookie_name
 credentials:
   usernames:
+    hello:
+      email: hello@hello.hello
+      first_name: Hello
+      last_name: world
+      logged_in: false
+      password: $2b$12$/wAEC16BLZZORWXUOh1ul.efp.vdjPHy5UfKdACU8s6SmMbf/V91e
+      password_hint: HelloWorld@1
+      roles:
+      - viewer
     reddragonnm:
-      failed_login_attempts:
+      email: neeleshojmishra@gmail.com
+      failed_login_attempts: null
       first_name: Neelesh
       last_name: Mishra
-      email: neeleshojmishra@gmail.com
-      logged_in: False
-      password: helloworld
-      roles: # Optional
-        - admin
-        - editor
-        - viewer
+      logged_in: false
+      password: $2b$12$GgYVfWkMCLOto0NH7rlXxeVA9GI/Gnh/.UzJ5yn6P6FdJOWNt5fUm
+      roles:
+      - admin
+      - editor
+      - viewer

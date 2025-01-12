@@ -21,6 +21,9 @@ if st.session_state["authentication_status"]:
         time = st.time_input("Time of event")
 
         button = st.button("Add event")
+
+        if button:
+            pass
     else:
         st.warning("You are not authorized for this action")
 
