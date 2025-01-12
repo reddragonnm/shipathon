@@ -50,6 +50,8 @@ if st.session_state["authentication_status"]:
             "Dislike", key=f"Dislike{idx}", on_click=lambda: add_dislike(username, idx)
         )
 
+        st.divider()
+
 
 elif st.session_state["authentication_status"] is False:
     st.error("Username/password is incorrect")
