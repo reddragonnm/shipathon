@@ -2,3 +2,4 @@ qdrant_client
 streamlit
 streamlit_authenticator
 google-generativeai
+sentence_transformers
