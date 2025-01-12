@@ -56,14 +56,26 @@ if st.session_state["authentication_status"]:
             st.image(eval(img))  # Use eval to parse the image URL
 
         # Display event details
+        st.write("## Description")
         st.write(payload["description"])
-        st.write(payload["date"])
-        st.write(payload["time"])
+
+        st.write("## When?")
+        st.write(
+            f"Date: {datetime.datetime.strptime(str(payload["date"]), "%Y%m%d").strftime(
+                "%B %d, %Y"
+            )}"
+        )
+        st.write(f"Time: {payload["time"]}")
+
+        st.write("## Points of interest")
+        st.write(payload["model_output"])
 
         # Add Like and Dislike buttons with their respective actions
         st.button("Like", key=f"Like{idx}", on_click=lambda: add_like(username, idx))
         st.button(
-            "Dislike", key=f"Dislike{idx}", on_click=lambda: add_dislike(username, idx)
+            "Dislike",
+            key=f"Dislike{idx}",
+            on_click=lambda: add_dislike(username, idx),
         )
 
         st.divider()

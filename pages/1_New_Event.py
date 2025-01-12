@@ -34,7 +34,7 @@ if st.session_state["authentication_status"]:
 
         # Logic to handle event submission
         if button:
-            text = description
+            model_output = ""
 
             # If images are uploaded, process them using the generative model
             if images is not None:
@@ -54,8 +54,7 @@ if st.session_state["authentication_status"]:
                     ]
                 )
 
-                # Append the model's response to the description
-                text += " " + response.text
+                model_output = response.text
 
             # Calculate the next unique ID for the new event
             next_id = (
@@ -73,7 +72,7 @@ if st.session_state["authentication_status"]:
                     models.PointStruct(
                         id=next_id,
                         vector=encoder.encode(
-                            text
+                            description + " " + model_output
                         ).tolist(),  # Vector representation of the event text
                         payload={
                             "date": int(
@@ -84,6 +83,7 @@ if st.session_state["authentication_status"]:
                             "images": [
                                 str(image.getvalue()) for image in images
                             ],  # Raw image data
+                            "model_output": model_output,
                         },
                     )
                 ],
