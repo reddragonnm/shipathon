@@ -4,12 +4,10 @@ import datetime
 
 # Import custom functions and utilities
 from user import get_authenticator, load_model
-from db import load_data, get_likes_dislikes, add_like, add_dislike
+from db import get_likes_dislikes, add_like, add_dislike
 
 # Set the title of the Streamlit app
 st.title("EventConnect")
-
-load_data()
 
 # Initialize the authenticator and log in the user
 authenticator = get_authenticator()
@@ -25,8 +23,6 @@ if st.session_state["authentication_status"]:
 
     # Get the user's liked and disliked events
     likes_dislikes = get_likes_dislikes(username)
-
-    st.write(likes_dislikes)
 
     # Define a query filter for recommending events happening today or in the future
     query_filter = models.Filter(
