@@ -19,7 +19,7 @@ EventConnect is a web application designed to manage and explore events. It leve
 1. **Clone the repository**:
 
    ```sh
-   git clone https://github.com/yourusername/eventconnect.git
+   git clone https://github.com/reddragonnm/shipathon.git
    cd eventconnect
    ```
 
@@ -33,7 +33,7 @@ EventConnect is a web application designed to manage and explore events. It leve
    ```
 
 4. **Set up Streamlit secrets**:
-   Create a [secrets.toml](http://_vscodecontentref_/1) file with your API keys and Firebase credentials.
+   Create a `secrets.toml` file with your API keys and Firebase credentials.
 
 5. **Run the application**:
    ```sh
@@ -42,7 +42,16 @@ EventConnect is a web application designed to manage and explore events. It leve
 
 ## Configuration
 
-The application uses a [config.yaml](http://_vscodecontentref_/2) file for user credentials and roles. Update this file to manage users and their permissions.
+The application uses a [`config.yaml`](config.yaml) file for user credentials and roles. Update this file to manage users and their permissions.
+
+## Test Admin User
+
+For testing purposes, there is a pre-configured admin user with the following credentials:
+
+- **Username**: admin
+- **Password**: admin
+
+This admin user can be used to log in and access admin functionalities such as adding new events. You can update the credentials in the [`config.yaml`](config.yaml) file if needed.
 
 ## Usage
 
@@ -72,7 +81,7 @@ The application uses a [config.yaml](http://_vscodecontentref_/2) file for user 
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](http://_vscodecontentref_/3) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
