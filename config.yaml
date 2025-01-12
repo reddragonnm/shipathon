@@ -13,15 +13,26 @@ credentials:
       password: $2b$12$/wAEC16BLZZORWXUOh1ul.efp.vdjPHy5UfKdACU8s6SmMbf/V91e
       password_hint: HelloWorld@1
       roles:
-      - viewer
+        - viewer
     reddragonnm:
-      email: neeleshojmishra@gmail.com
+      email: hello2@gmail.com
       failed_login_attempts: 0
       first_name: Neelesh
       last_name: Mishra
       logged_in: true
       password: $2b$12$GgYVfWkMCLOto0NH7rlXxeVA9GI/Gnh/.UzJ5yn6P6FdJOWNt5fUm
       roles:
-      - admin
-      - editor
-      - viewer
+        - admin
+        - editor
+        - viewer
+    aakarsh:
+      email: hello@gmail.com
+      failed_login_attempts: 0
+      first_name: Aakarsh
+      last_name: Antiriksh
+      logged_in: true
+      password: helloworld
+      roles:
+        - admin
+        - editor
+        - viewer
