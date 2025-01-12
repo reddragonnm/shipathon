@@ -1,35 +1,15 @@
-import os
 import streamlit as st
-from dotenv import load_dotenv
 import base64
 
-import google.generativeai as genai
-from qdrant_client import QdrantClient, models
-from sentence_transformers import SentenceTransformer
+from qdrant_client import models
 
-from user import get_authenticator
+from user import get_authenticator, load_model
 
-load_dotenv()
 
 st.title("Add new event")
 
 authenticator = get_authenticator()
 authenticator.login()
-
-
-@st.cache_resource
-def load_model():
-    genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-    model = genai.GenerativeModel("gemini-1.5-flash")
-
-    qdrant_client = QdrantClient(
-        url="https://bd3982d8-a9af-40b3-b38c-7afb14f47da2.us-east-1-0.aws.cloud.qdrant.io:6333",
-        api_key=os.getenv("QDRANT_CLOUD_API_KEY"),
-    )
-
-    encoder = SentenceTransformer("all-MiniLM-L6-v2")
-
-    return model, qdrant_client, encoder
 
 
 if st.session_state["authentication_status"]:
@@ -49,6 +29,7 @@ if st.session_state["authentication_status"]:
         button = st.button("Add event")
 
         if button:
+            text = description
             if images is not None:
                 response = model.generate_content(
                     [
@@ -65,19 +46,27 @@ if st.session_state["authentication_status"]:
                     ]
                 )
 
-            st.write(description)
+                text += " " + response.text
 
-            qdrant_client.upload_points(
+            next_id = (
+                qdrant_client.count(
+                    collection_name="my_events",
+                    exact=True,
+                ).count
+                + 1
+            )
+
+            qdrant_client.upsert(
                 collection_name="my_events",
                 points=[
                     models.PointStruct(
-                        vector=encoder.encode(
-                            description + " " + response.text
-                        ).tolist(),
+                        id=next_id,
+                        vector=encoder.encode(text).tolist(),
                         payload={
-                            "date": date,
+                            "date": date.strftime("%y-%m-%d"),
                             "time": time,
                             "description": description,
+                            "images": [str(image.getvalue()) for image in images],
                         },
                     )
                 ],
