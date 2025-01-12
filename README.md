@@ -1,7 +1,5 @@
 # EventConnect
 
-EventConnect 2025
-
 ## Overview
 
 EventConnect is a web application designed to manage and explore events. It leverages Streamlit for the frontend, Google Cloud Firestore for the database, and Qdrant for vector search capabilities. The application allows users to register, log in, and interact with events by liking or disliking them. Admin users can add new events with descriptions, images, and dates.
